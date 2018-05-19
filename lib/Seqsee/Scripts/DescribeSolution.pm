@@ -50,9 +50,9 @@ class_has '+step' => (
         my ($group) = @_;
         my $ruleapp = $group->get_underlying_reln();
         my $rule    = $ruleapp->get_rule();
-        main::message("RULE DESCRIPTION CURRENTLY BROKEN!!", 1);
-        #Seqsee::Scripts::SCRIPT( 'DescribeRule',
-        #  { rule => $rule, ruleapp => $ruleapp } );
+        #main::message("RULE DESCRIPTION CURRENTLY BROKEN!!", 1);
+        Seqsee::Scripts::SCRIPT( 'DescribeRule',
+          { rule => $rule, ruleapp => $ruleapp } );
       },
       sub {
         my ($group) = @_;
